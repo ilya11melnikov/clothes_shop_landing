@@ -1,0 +1,160 @@
+@use './helpers/variables' as *;
+@use './helpers/extends/extends' as *;
+
+.header__w {
+	height: 6.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// burger_menu---------------
+
+@media (min-width: $point_2) {
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 5.4rem;
+	}
+}
+
+@media (max-width: $point_3) {
+	.nav {
+		position: fixed;
+		z-index: 998;
+
+		top: 0;
+		left: 0;
+		width: 100dvw;
+		height: 100dvh;
+		background-color: $color_accent;
+		display: flex;
+		flex-direction: column;
+
+		transition: all 0.3s ease-in-out;
+		overflow: auto;
+
+		transform: translateX(-100dvw);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+
+@media (max-width: $point_3) {
+	.nav.active {
+		transform: translateX(0);
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+}
+
+@media (min-width: $point_2) {
+	.nav_close {
+		display: none;
+	}
+}
+
+@media (max-width: $point_3) {
+	.nav_close {
+		display: block;
+		position: absolute;
+		z-index: 999;
+		top: 6.8rem;
+		left: 2rem;
+
+		height: 4rem;
+		width: 4rem;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-image: url(../imgs/header/nav_cross.svg);
+		border: none;
+
+		cursor: pointer;
+	}
+}
+
+@media (min-width: $point_2) {
+	.nav__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 6.5rem;
+	}
+}
+
+@media (max-width: $point_3) {
+	.nav__list {
+		display: flex;
+		flex-direction: column;
+		padding: 4rem;
+		align-items: center;
+		row-gap: 3rem;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+@media (min-width: $point_2) {
+	.nav__link {
+		font-weight: 500;
+		font-size: 2.2rem;
+		line-height: 1.5;
+		color: $color_black;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: $point_3) {
+	.nav__link {
+		font-size: 3.3rem;
+		color: $color_white;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			color: $color_black;
+		}
+	}
+}
+
+@media (min-width: $point_2) {
+	.menu_button {
+		display: none;
+	}
+}
+
+@media (max-width: $point_3) {
+	.menu_button {
+		display: block;
+
+		width: 4rem;
+		height: 4rem;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-image: url(../imgs/header/burger_menu.svg);
+		border: none;
+
+		cursor: pointer;
+	}
+}
+
+@media (max-width: $point_3) {
+	.btn_black {
+		width: auto;
+	}
+}
+
+@media (max-width: $point_3) {
+	.body.body--overflow_hidden {
+		overflow: hidden;
+	}
+}
+
+// burger_menu###############
