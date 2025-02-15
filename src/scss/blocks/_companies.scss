@@ -1,0 +1,24 @@
+@use './helpers/variables' as *;
+@use './helpers/extends/extends' as *;
+
+.companies__w {
+    background-color: $color_accent;
+}
+
+.companies {
+    display: flex;
+    gap: 5.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 6.1rem 0 5.5rem 0;
+}
+
+.companies__icon {
+    display: block;
+    width: 23.5rem; 
+    height: 7rem;
+}
+
+.companies__icon_img {
+    @extend %contain_img;
+}

@@ -28,7 +28,11 @@ body {
 	width: 100%;
 
 	&.section--header {
-		padding: 4.6rem 0 6.2rem 0;
+		padding: 4.6rem 0 2.8rem 0;
+	}
+
+	&.section--hero {
+		padding: 2.8rem 0 6.3rem 0;
 	}
 }
 
@@ -43,9 +47,15 @@ body {
 		&.container--header {
 			padding: 0 10rem;
 		}
-
-		&.container--hero {
-			padding: 0 10rem;
-		}
 	}
+
+	&.container--hero {
+		padding: 0 10rem;
+	}
+
+	&.container--companies {
+		padding: 0 0;
+	}
+
+
 }
