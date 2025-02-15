@@ -34,14 +34,18 @@ body {
 
 .container {
 	padding: 0 2rem;
-	max-width: 172rem;
+	max-width: 192rem;
 	width: 100%;
 
 	margin: 0 auto;
 
-	&.container--header {
-		padding: 0 10rem;
+	@media (min-width: $point_2) {
+		&.container--header {
+			padding: 0 10rem;
+		}
+
+		&.container--hero {
+			padding: 0 10rem;
+		}
 	}
 }
-
-
