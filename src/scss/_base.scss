@@ -28,20 +28,68 @@ body {
 	width: 100%;
 
 	&.section--header {
-		padding: 4.6rem 0 6.2rem 0;
+		padding: 4.6rem 0 2.8rem 0;
+	}
+
+	&.section--hero {
+		padding: 2.8rem 0 6.3rem 0;
+	}
+
+	&.section--new_arrivals {
+		padding: 6.9rem 0 19rem 0;
 	}
 }
 
 .container {
 	padding: 0 2rem;
-	max-width: 172rem;
+	max-width: 192rem;
 	width: 100%;
 
 	margin: 0 auto;
 
-	&.container--header {
+	@media (min-width: $point_2) {
+		&.container--header {
+			padding: 0 10rem;
+		}
+	}
+
+	&.container--hero {
 		padding: 0 10rem;
+	}
+
+	&.container--padding_none {
+		padding: 0 0;
+	}
+
+	&.container--new_arrivals {
+		padding: 0 10.4rem;
 	}
 }
 
+.section_title {
+	position: relative;
+	font-weight: 900;
+	font-size: 4.8rem;
+	line-height: 1;
 
+	color: $color_black;
+
+	margin-bottom: 11.8rem;
+
+	&::after {
+		position: absolute;
+		content: '';
+		left: 19rem;
+		bottom: 0;
+
+		width: 19rem;
+		height: 3.2rem;
+
+		background-image: url(../imgs/hero/line.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		z-index: -1;
+	}
+}

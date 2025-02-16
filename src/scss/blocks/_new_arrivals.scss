@@ -1,0 +1,59 @@
+@use './helpers/variables' as *;
+@use './helpers/extends/extends' as *;
+
+.new_arrivals__w {
+	display: flex;
+	align-items: center;
+	column-gap: 9rem;
+}
+
+.new_arrivals__picture {
+	display: block;
+	width: 48.4rem;
+	height: 70.4rem;
+    
+	margin-bottom: 2.8rem;
+}
+
+.new_arrivals__img {
+    @extend %cover_img;
+    border-radius: 2rem;
+}
+
+.new_arrivals__clothes {
+    position: relative;
+&::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 38px;
+
+    width: 3.2rem;
+    height: 2.2rem;
+
+    background-image: url(../imgs/new_arrivals/arrow.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+        cursor: pointer;
+}
+}
+
+.new_arrivals__clothes_name {
+	font-weight: 500;
+	font-size: 3.2rem;
+	line-height: 1.56;
+
+	color: $color_black;
+
+	margin-bottom: 0.7rem;
+}
+
+.new_arrivals__clothes_descr {
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 2;
+
+	color: $color_descr_2;
+}

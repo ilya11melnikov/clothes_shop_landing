@@ -8,6 +8,16 @@
 	align-items: center;
 }
 
+.logo__icon {
+	display: block;
+	width: 23.6rem;
+	height: 6rem;
+}
+
+.logo__icon_img {
+	@extend %cover_img;
+}
+
 // burger_menu---------------
 
 @media (min-width: $point_2) {
@@ -106,6 +116,7 @@
 		line-height: 1.5;
 		color: $color_black;
 		text-decoration: none;
+		letter-spacing: 1%;
 	}
 }
 
