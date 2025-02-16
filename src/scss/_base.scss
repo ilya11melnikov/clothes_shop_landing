@@ -2,6 +2,20 @@
 
 html {
 	font-size: 10px;
+
+	// @media (min-width: 1499.98px) and (max-width: 1799.98px) {
+	// 	font-size: 8.5px;
+	// }
+	// @media (min-width: 1319.98px) and (max-width: 1499.98px) {
+	// 	font-size: 7px;
+	// }
+	// @media (min-width: 1149.98px) and (max-width: 1319.98px) {
+	// 	font-size: 6px;
+	// }
+	// @media (min-width: 1023.98px) and (max-width: 1149.98px) {
+	// 	font-size: 5px;
+	// }
+
 }
 
 html,
@@ -36,7 +50,11 @@ body {
 	}
 
 	&.section--new_arrivals {
-		padding: 6.9rem 0 19rem 0;
+		padding: 19rem 0 11rem 0;
+	}
+
+	&.section--download {
+		padding: 11rem 0 22rem 0;
 	}
 }
 
@@ -61,12 +79,12 @@ body {
 		padding: 0 0;
 	}
 
-	&.container--new_arrivals {
-		padding: 0 10.4rem;
-	}
+	
 }
 
 .section_title {
+	display: flex;
+	justify-content: flex-start;
 	position: relative;
 	font-weight: 900;
 	font-size: 4.8rem;

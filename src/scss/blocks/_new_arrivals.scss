@@ -3,6 +3,14 @@
 
 .new_arrivals__w {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.new_arrivals__block_w {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	column-gap: 9rem;
 }
@@ -11,33 +19,33 @@
 	display: block;
 	width: 48.4rem;
 	height: 70.4rem;
-    
+
 	margin-bottom: 2.8rem;
 }
 
 .new_arrivals__img {
-    @extend %cover_img;
-    border-radius: 2rem;
+	@extend %cover_img;
+	border-radius: 2rem;
 }
 
 .new_arrivals__clothes {
-    position: relative;
-&::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 38px;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		right: 0;
+		top: 38px;
 
-    width: 3.2rem;
-    height: 2.2rem;
+		width: 3.2rem;
+		height: 2.2rem;
 
-    background-image: url(../imgs/new_arrivals/arrow.svg);
+		background-image: url(../imgs/new_arrivals/arrow.svg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 
-        cursor: pointer;
-}
+		cursor: pointer;
+	}
 }
 
 .new_arrivals__clothes_name {

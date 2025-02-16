@@ -1,0 +1,137 @@
+@use './helpers/variables' as *;
+@use './helpers/extends/extends' as *;
+
+.download__w {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 33.9rem;
+}
+
+.download__install {
+	width: 50.7rem;
+}
+
+.download__title {
+	font-weight: 900;
+	font-size: 4.8rem;
+	line-height: 1.5;
+
+	margin-bottom: 4.1rem;
+}
+
+.download__descr {
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 1.46;
+
+	color: $color_descr_3;
+
+	margin-bottom: 6.5rem;
+}
+
+.download__apps {
+	display: flex;
+	align-items: center;
+	gap: 1.9rem;
+}
+
+.download__link {
+	display: block;
+	width: 20.4rem;
+	height: 7.1rem;
+	border-radius: 1rem;
+}
+
+.download__link_img {
+	@extend %contain_img;
+}
+
+.download__picture {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+
+		width: 2.4rem;
+		height: 2.4rem;
+
+		background-color: #89807a;
+		border-radius: 50%;
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 4.3rem;
+		right: 2.8rem;
+
+		width: 1.7rem;
+		height: 1.7rem;
+
+		background-color: #89807a;
+		border-radius: 50%;
+	}
+}
+
+.download__circle {
+	display: block;
+
+	&.download__circle--small {
+		position: absolute;
+		width: 44rem;
+		height: 43.5rem;
+	}
+	&.download__circle--medium {
+		position: absolute;
+		width: 53.7rem;
+		height: 53rem;
+	}
+	&.download__circle--large {
+		position: relative;
+		width: 63.7rem;
+		height: 62.9rem;
+
+		&::before {
+			position: absolute;
+			content: '';
+			bottom: 2.4rem;
+			left: -4rem;
+
+			width: 3.4rem;
+			height: 3.4rem;
+
+			background-color: #ebd96b;
+			border-radius: 50%;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+            top: 0.3rem;
+            right: 6.8rem;
+
+			width: 5rem;
+			height: 5rem;
+
+			background-color: #ebd96b;
+			border-radius: 50%;
+		}
+	}
+}
+
+.download__phone {
+	position: absolute;
+	display: block;
+	width: 44.6rem;
+	height: 68.4rem;
+}
+
+.download__phone_img {
+	@extend %cover_img;
+}
