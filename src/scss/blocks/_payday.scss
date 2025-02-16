@@ -1,0 +1,178 @@
+@use './helpers/variables' as *;
+@use './helpers/extends/extends' as *;
+
+.payday__w {
+	display: flex;
+}
+
+.payday__picture_w {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: '';
+		left: 12.9rem;
+		top: 20.3rem;
+
+		width: 7.6rem;
+		height: 7.6rem;
+
+		background-image: url(../imgs/payday/star_payday.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		pointer-events: none;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		left: 18.2rem;
+		bottom: 35.8rem;
+
+		width: 7.6rem;
+		height: 7.6rem;
+
+		background-image: url(../imgs/payday/star_payday.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		pointer-events: none;
+	}
+}
+
+.payday__picture {
+	display: block;
+	width: 99.1rem;
+	height: 96.8rem;
+
+	&::before {
+		position: absolute;
+		content: '';
+		right: 16.9rem;
+		top: 16.3rem;
+
+		width: 7.6rem;
+		height: 7.6rem;
+
+		background-image: url(../imgs/payday/star_payday.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		pointer-events: none;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		right: 12.2rem;
+		bottom: 21.8rem;
+
+		width: 7.6rem;
+		height: 7.6rem;
+
+		background-image: url(../imgs/payday/star_payday.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		pointer-events: none;
+	}
+}
+
+.payday__picture_img {
+	@extend %cover_img;
+}
+
+.payday__info_w {
+	max-height: 968px;
+	width: 100%;
+	background: linear-gradient(
+		1.32deg,
+		#e0c340 0.13%,
+		#dfc23e 3.97%,
+		#e1c441 7.2%,
+		#e3c743 10.13%,
+		#e4c542 12.98%,
+		#e6c744 15.99%,
+		#e7c845 19.52%,
+		#e5c643 23.96%,
+		#e6c945 30.43%,
+		#e3c743 36.49%,
+		#e9ca48 42.49%,
+		#edce49 49.35%,
+		#f0d44c 55.42%,
+		#f4d84f 61.43%,
+		#f6da52 65.74%,
+		#f7db53 72.23%,
+		#f9dd55 77.43%,
+		#f9df56 83.84%,
+		#fae157 91.52%,
+		#f9df56 97.87%
+	);
+}
+
+.payday__info {
+	padding: 12.8rem 0 0 6.7rem;
+}
+
+.payday__title {
+	position: relative;
+	font-weight: 900;
+	font-size: 11.2rem;
+	line-height: 1.22;
+	z-index: 1;
+
+	margin-bottom: 3.3rem;
+
+	&::before {
+		position: absolute;
+		content: '';
+		left: -1.6rem;
+
+		width: 49.4rem;
+		height: 14.2rem;
+
+		background-image: url(../imgs/hero/white_strip.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+	}
+}
+
+.payday__text {
+	font-weight: 500;
+	font-size: 3.6rem;
+	line-height: 1.44;
+
+	margin-bottom: 4.1rem;
+}
+
+.payday__data {
+	font-weight: 700;
+	font-size: 3.6rem;
+	line-height: 1.44;
+
+	margin-bottom: 1rem;
+}
+
+.payday__terms {
+	font-size: 3.6rem;
+	line-height: 1.44;
+
+	margin-bottom: 5.1rem;
+
+}
+
+.btn_black_payday {
+    min-width: 13.4rem;
+    width: 26.5rem;
+    height: 9.5rem;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+
+}
