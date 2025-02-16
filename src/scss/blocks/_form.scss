@@ -1,0 +1,61 @@
+@use './helpers/variables' as *;
+@use './helpers/extends/extends' as *;
+
+.form__w {
+	background-color: $color_accent;
+	min-height: 62.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.form__title {
+	font-weight: 900;
+	font-size: 5.5rem;
+	line-height: 1.27;
+	text-align: center;
+
+	color: $color_white;
+
+	max-width: 96.6rem;
+
+	margin-bottom: 3.7rem;
+}
+
+.form__descr {
+	font-size: 3.2rem;
+	line-height: 1;
+
+	color: $color_white;
+
+	margin-bottom: 4.9rem;
+}
+
+.form {
+	position: relative;
+}
+
+.form__email {
+	width: 57.4rem;
+	height: 8.7rem;
+	font-size: 2.4rem;
+	line-height: 1.46;
+	padding: 0rem 18.1rem 0rem 2.7rem;
+
+	border: none;
+	border-radius: 1rem;
+}
+
+.btn_black--form {
+	position: absolute;
+	left: 40rem;
+	top: 1rem;
+
+	font-weight: 500;
+	font-size: 3.3rem;
+	line-height: 1;
+
+	width: 16.1rem;
+	height: 6.7rem;
+}
